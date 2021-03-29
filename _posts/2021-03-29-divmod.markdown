@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Getting both the Quotient & Remainder: divmod in Python"
+date:   2021-03-29 02:29:30 +0100
+categories: python builtins divmod division
+---
+When I originally learned to program (Java back in 2010), we always had to use different operators to get the quotient and remainder. In Python, it’s a double-slash `//` for integer division and the percent `%` for modulo to get the remainder.
+
+```python
+quotient = 10 // 3
+remainder = 10 % 3 
+```
+I usually ended up needing both values and back then often wished there was a single built-in function that returned both. Well, fast-forward 11 years and one Google search later, I discovered that such convenience has already existed in python. (In my defense, I haven’t needed to revisit modulo until recently which prompted this journey of discovery).
+
+```python
+quotient, remainder = divmod(10, 3)
+```
+Well, that’s one less line on code in the never-ending quest to write clean and concise programs!
+
+In the meantime, it’s also a good time to review Python’s [built-in methods](https://docs.python.org/3/library/functions.html). Some of my personal favs are list comprehensions using [any()](https://docs.python.org/3/library/functions.html#any) or [all()](https://docs.python.org/3/library/functions.html#all). 
+
